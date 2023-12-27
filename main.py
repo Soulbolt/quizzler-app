@@ -13,7 +13,7 @@ for question in question_data:
     question_bank.append(new_question)
 
 quiz = QuizBrain(question_bank)
-quiz_ui = QuizInterface()
+quiz_ui = QuizInterface(quiz)
 
 # Check if quiz still has questions remaining
 # while quiz.still_has_questions():
